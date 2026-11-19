@@ -1,0 +1,8 @@
+project: savantenvs/tz
+target: zdump
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/zdump/testsuite
+cmds:
+  - cmd: /mayhem/out/zdump @@
+    timeout: 10

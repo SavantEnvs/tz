@@ -1,0 +1,9 @@
+project: savantenvs/tz
+target: tzload
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/tzload/testsuite
+cmds:
+  - cmd: /mayhem/out/fuzz_tzload
+    libfuzzer: true
+    timeout: 5

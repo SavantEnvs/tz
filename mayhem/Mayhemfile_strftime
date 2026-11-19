@@ -1,0 +1,9 @@
+project: savantenvs/tz
+target: strftime
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/strftime/testsuite
+cmds:
+  - cmd: /mayhem/out/fuzz_strftime
+    libfuzzer: true
+    timeout: 5

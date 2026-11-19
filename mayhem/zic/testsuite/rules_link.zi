@@ -1,0 +1,5 @@
+Zone Test/A 1:00 - XST 2000
+		2:00 Foo X%sT
+Rule Foo 2001 max - Mar lastSun 2:00 1:00 D
+Rule Foo 2001 max - Oct lastSun 2:00 0 S
+Link Test/A Test/B
